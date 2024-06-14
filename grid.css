@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.continer {
+    width: 100%;
+
+}
+
+
+/* ##### disaine .continer h2 ################ */
+.continer h2{
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ff6969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+
+/* ##### disaine .continer images ################ */
+
+.continer .images{
+    margin-top: 3px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+    gap: 10px;
+
+}
+
+.continer .images img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.continer .images img:hover{
+    transform: scale(1.0.3);
+    transition: 0.6s;
+}
+/* ##### disaine Div Hideen##### */
+
+
+.continer .vuImages {
+    z-index: 99;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.7s;
+    display: none;
+ 
+}
+
+.continer .vuImages .a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continer .vuImages .a .close{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.continer .vuImages .a .close:hover{
+    color: rgba(212, 25, 25, 0.822);
+    transform: scale(1.1);
+}
+
+.continer .vuImages .a img{
+    width: 1200px;
+    height: 800px;
+    object-fit: cover;
+    border: 2px solid white;
+}
